@@ -24,13 +24,16 @@
     "redux-thunk": "^2.3.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.86.0",
-    "typescript": "3.4.1"
+    "typescript": "3.4.1",
+    "snyk": "^1.189.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,5 +56,6 @@
     "enzyme-adapter-react-16": "^1.11.2",
     "react-addons-test-utils": "^15.6.2",
     "redux-immutable-state-invariant": "^2.1.0"
-  }
+  },
+  "snyk": true
 }
